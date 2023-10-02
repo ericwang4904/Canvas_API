@@ -4,7 +4,7 @@ from apiFunctions import apiFunctions
 logging.basicConfig(filename='app.log',
  level=logging.DEBUG,
  filemode='w', 
- format='%(asctime)s - %(levelname)s:%(message)s', 
+ format='%(asctime)s - %(filename)s:%(funcName)s:%(levelname)s:%(message)s', 
  datefmt='%m/%d/%Y %H:%M:%S')
 
 def main():

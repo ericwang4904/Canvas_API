@@ -1,0 +1,2 @@
+09/29/2023 15:26:42 - connectionpool.py:_new_conn:DEBUG:Starting new HTTPS connection (1): k12.instructure.com:443
+09/29/2023 15:26:42 - connectionpool.py:_make_request:DEBUG:https://k12.instructure.com:443 "GET /api/v1/courses/1303651 HTTP/1.1" 200 None

@@ -22,12 +22,19 @@ class canvasGetter:
             return
         logging.error(f'Failed with status code: {response.status_code} and message {response.text}')
 
+    def get_all_items_in_module(self, course_id, module_id):
+        response = self.get_link(f'/api/v1/courses/{course_id}/modules/{module_id}')
+
     def post_assignment(self, course_id, assignment_data):
         response = self.post_link(f'/api/v1/courses/{course_id}/assignments', assignment_data)
         return response
     
     def update_assignment(self, course_id, assignment_id, assignment_data):
         response = self.post_link(f'/api/v1/courses/{course_id}/assignments/{assignment_id}', assignment_data)
+        return response
+    
+    def get_course_data(self, course_id):
+        response = self.get_link(f'/api/v1/courses/{course_id}')
         return response
 
     def get_all_courses(self):
@@ -41,6 +48,7 @@ class canvasGetter:
     def get_all_assignments(self, course_id):
         response = self.get_link(f'/api/v1/courses/{course_id}/assignments')
         return response
+    
 
     
     
