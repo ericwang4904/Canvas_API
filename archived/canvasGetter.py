@@ -24,6 +24,7 @@ class canvasGetter:
 
     def get_all_items_in_module(self, course_id, module_id):
         response = self.get_link(f'/api/v1/courses/{course_id}/modules/{module_id}')
+        return response
 
     def post_assignment(self, course_id, assignment_data):
         response = self.post_link(f'/api/v1/courses/{course_id}/assignments', assignment_data)
