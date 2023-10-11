@@ -1,6 +1,6 @@
 {"API_KEY": "6936~4ItPO9eLmHQ5K10XeUZJelh3MKfZUmMv95ZlcBN5JnrZ4gufeEHlxYzUcGGAjyjm", "API_URL": "https://k12.instructure.com", 
 "courses_groups": {
-    "test": [1285411, 1285412, 1303651],
-    "aday": [1285411, 1285412]
+    "test": ["1285411", "1285412", "1303651"],
+    "aday": ["1285411", "1285412"]
 }
 }
