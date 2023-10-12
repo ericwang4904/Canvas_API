@@ -36,7 +36,7 @@ Run `pip install -r requirements.txt` to install the relevant modules the progra
    }
    ```
    4. IMPORTANT NOTE: Don't put the course that you manually add items to into a course group. If you do, every time you push an item to a course group, you will duplicate the original. Instead, have one course be your "master course" that you modify from Canvas, and put the others into a course group.
-   - Example: Block1 is the master course, course group `"History"` contains `["Block2", "Block3", ..., "Block8"]`
+   - Example: `Block1` is the master course, course group `"History"` contains `["Block2", "Block3", ..., "Block8"]`
 
 ## Using the Program.
 Congrats! You're done setting up. Simply run `main.py` to test your code for functionality. You can figure out the rest by yourself. If you have any questions, just ask!
