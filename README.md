@@ -2,7 +2,7 @@
 1. Downloading and installing Python
 Download and install the latest version of Python from https://www.python.org/downloads/. Make sure it's 3.xx.x and for MacOS; that should be the first option in downloads anyway
 
-2. Downloading the app
+2. Downloading the app <\br>
 Open a terminal and enter the following:
 ```
 cd PATH
@@ -11,7 +11,7 @@ git clone https://github.com/ericwang4904/Canvas_API.git
 where PATH is the place you want to put the program (`cd Desktop` is a good choice). After you've downloaded the program, type
 `cd Canvas_API` to enter the program folder.
 
-3. Installing app requirements
+3. Installing app requirements <\br>
 Run `pip install -r requirements.txt` to install the relevant modules the program is using. Alternatively, just do `pip install requests` to install the latest version, as it is the sole dependancy.
 
 ## Setup
