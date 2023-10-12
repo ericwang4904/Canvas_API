@@ -1,6 +1,7 @@
 import requests
 import datetime as dt
 from src.data_setup import *
+
 # - All request functions -
 
 # Base
@@ -38,15 +39,26 @@ def delete_link(url, data=None):
         print(f'Failed with status code: {response.status_code}')
         print(response.text)
 
+def get_all_paginated(base_url, query_string='?page=', data=None):  # The use of query_string is kinda cursed but its fine
+    response = []
+    for i in range(1, LOOP_CUTOFF):
+        partial = get_link(f"{base_url}{query_string}{i}", data)
+        if partial == []:  # The empty output 
+            break
+
+        response.extend(partial)
+
+    return response
+
 # Mass getting
 def courses_teaching():
-    response = get_link(f'/api/v1/courses?enrollment_type=teacher')
+    response = get_all_paginated(f'/api/v1/courses', query_string='?enrollment_type=teacher&page=')
     return response
 def modules_in_course(course_id):
-    response = get_link(f'/api/v1/courses/{course_id}/modules')
+    response = get_all_paginated(f'/api/v1/courses/{course_id}/modules')
     return response
 def items_in_module(course_id, module_id):
-    response = get_link(f'/api/v1/courses/{course_id}/modules/{module_id}/items')
+    response = get_all_paginated(f'/api/v1/courses/{course_id}/modules/{module_id}/items')
     return response
 
 # Singular Getting

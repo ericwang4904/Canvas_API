@@ -1,6 +1,7 @@
 import json
 
-DEBUG_MESSAGES = True
+DEBUG_MESSAGES = True  # Keep it on if you want to get information about bad inputs
+LOOP_CUTOFF = 20  # Safety measure that stops searching for things in a course/module/etc. after that many loops. Safety precaution for get_all_paginated in functions 
 
 # Load data
 PATH = "data.json"
