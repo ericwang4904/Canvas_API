@@ -47,10 +47,11 @@ Run `pip install -r requirements.txt` to install the relevant modules the progra
 ## Using the Program.
 Congrats! You're done setting up. Simply run `main.py` to test your code for functionality. Here's an example for how it should work:
 1. You create an item "testing" one of your courses "course" under a module "test"
-2. You run main and select "course"
-3. You select "test"
-4. You select "testing"
-5. You select the course group "test_group"
+2. You run main from the Python IDLE editor or type `python3 main.py` in your terminal (You'll have to `cd PATH/Canvas_API` first)
+3. You select "course"
+4. You select "test"
+5. You select "testing"
+6. You select the course group "test_group"
 For every course in "test_group", the program will look for modules named "test" and push the item into that module if found (Make sure that module name is present or that course will be skipped!). In the future (or never), I'm planning on adding delete and update functionality, but those are secondary.
 
 If problems arise or you need help, just email me at eriwang@nuevaschool.org!
