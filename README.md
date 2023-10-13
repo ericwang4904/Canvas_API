@@ -45,6 +45,14 @@ Run `pip install -r requirements.txt` to install the relevant modules the progra
    - Example: `Block1` is the master course, course group `"History"` contains `["Block2", "Block3", ..., "Block8"]`
 
 ## Using the Program.
-Congrats! You're done setting up. Simply run `main.py` to test your code for functionality. You can figure out the rest by yourself. If you have any questions, just ask!
+Congrats! You're done setting up. Simply run `main.py` to test your code for functionality. Here's an example for how it should work:
+1. You create an item "testing" one of your courses "course" under a module "test"
+2. You run main and select "course"
+3. You select "test"
+4. You select "testing"
+5. You select the course group "test_group"
+For every course in "test_group", the program will look for modules named "test" and push the item into that module if found (Make sure that module name is present or that course will be skipped!). In the future (or never), I'm planning on adding delete and update functionality, but those are secondary.
 
-(Make sure your module is present in every course in the group or that course will be skipped!)
+If problems arise or you need help, just email me at eriwang@nuevaschool.org!
+
+
