@@ -1,3 +1,6 @@
+## Purpose
+The purpose of this software is to allow a user to push an module item in one course to a group of other courses, eliminating the need to manually add module items. 
+
 ## Installation
 1. Downloading and installing Python
 
@@ -44,4 +47,4 @@ Run `pip install -r requirements.txt` to install the relevant modules the progra
 ## Using the Program.
 Congrats! You're done setting up. Simply run `main.py` to test your code for functionality. You can figure out the rest by yourself. If you have any questions, just ask!
 
-
+(Make sure your module is present in every course in the group or that course will be skipped!)
