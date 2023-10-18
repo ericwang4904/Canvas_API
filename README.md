@@ -18,9 +18,7 @@ where PATH is the place you want to put the program (`cd Desktop` is a good choi
 
 3. Installing app requirements
 
-Run `pip install -r requirements.txt` to install the relevant modules the program is using. Alternatively, just do `pip install requests` to install the latest version, as it is the sole dependancy.
-
-Alternatively, run `setup.sh` to create a virtual environment for python (might be better for future stability).
+Run the `setup.sh` to install the relevant modules the program is using. Alternatively, just do `pip install requests` to install the latest version, as it is the sole dependancy.
 
 ## Setup
 1. Setting up the API token
