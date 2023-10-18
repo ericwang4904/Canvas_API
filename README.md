@@ -18,7 +18,7 @@ where PATH is the place you want to put the program (`cd Desktop` is a good choi
 
 3. Installing app requirements
 
-Run the `setup.sh` to install the relevant modules the program is using. Alternatively, just do `pip install requests` to install the latest version, as it is the sole dependancy.
+Run the `setup.sh` file (`bash setup.sh` in terminal while in the Canvas_API directory) to install the relevant modules the program is using. Alternatively, just do `pip install requests` to install the latest version, as it is the sole dependancy.
 
 ## Setup
 1. Setting up the API token
