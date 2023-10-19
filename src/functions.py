@@ -109,7 +109,12 @@ def items_name_id_dict(course_id, module_id):
     return canvas_dict_to_name_id_dict(items, 'title')
 
 #  The function (singular) that finds modules with the same name
-def get_same_modules(cid_list, module_name):
+def get_same_modules(cid_list, module_name, excluded_courses=[]):
+    if excluded_courses != []:  # Get rid of excluded courses, if any
+        final_cid_list = [cid for cid in cid_list if cid not in excluded_courses]
+    else: 
+        final_cid_list = cid_list
+    
     cid_module_pairs = {}
     for cid in map(str, cid_list):
         # Dictionary of {module_name : module_id}
