@@ -28,7 +28,7 @@ Run the `setup.sh` file (`bash setup.sh` in terminal while in the Canvas_API dir
    4. Open the `data.json` file in your `Canvas_API` folder.
    5. Paste in your token in the TOKEN_GOES_HERE section.
    6. Return to the Canvas homepage and copy the url, before pasting it into the URL_GOES_HERE section of `data.json`.
-   7. It should look like this: `{"API_KEY": "abcd~efghijklmnop", "API_URL": "https://nuevaschool.instructure.com/"}`.
+   7. It should look like this: `{"API_KEY": "abcd~efghijklmnop", "API_URL": "https://nuevaschool.instructure.com"}` (make sure your url does not end with a `/`!).
    8. Save the file.
 
 2. Setting up the course groups
