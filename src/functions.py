@@ -35,6 +35,7 @@ def delete_link(url, data=None):
     
     if response.status_code == 200:
         return
+    ## Debug messages are not really working :(
     if DEBUG_MESSAGES: 
         print(f'Failed with status code: {response.status_code}')
         print(response.text)
@@ -149,6 +150,23 @@ def post_to_course_group(id_list, course_group):  # [course_id, module_id, item_
     
     return
 
+## Added delete function
+def delete_to_course_group(id_list, course_group):
+    main_course_id,main_module_id,main_item_id = id_list
+
+    item_data = get_module_item(main_course_id, main_module_id, main_item_id)
+    item_data = format_module_item_data(item_data)
+    
+    for course_id in course_group:
+        delete_module_item(course_id, main_module_id, main_item_id)
+def update_to_course_group(id_list, course_group):
+    main_course_id,main_module_id,main_item_id = id_list
+
+    item_data = get_module_item(main_course_id, main_module_id, main_item_id)
+    item_data = format_module_item_data(item_data)
+
+    for course_id in course_group:
+        update_module_item(course_id, main_module_id, main_item_id, item_data)
 # - The functions that print and get input -
 
 # Base
