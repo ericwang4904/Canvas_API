@@ -20,7 +20,8 @@ def main():
             delete_to_course_group(id_list, course_group)
         elif response == "U" or response == "u":
             update_to_course_group(id_list, course_group)
-        #Indicate failed
+        else:
+            print(f'Failed with status code: {response.status_code}')
     askaction()
 
 if __name__ == "__main__":
