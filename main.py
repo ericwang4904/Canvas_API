@@ -10,7 +10,19 @@ def main():
     if course_group == None:
         return
 
-    post_to_course_group(id_list, course_group)
+## Added prompt 
+    def askaction():
+        print("Duplicate (D), Delete (X), or Update (U)?")
+        response = input("> ")
+        if response == "D" or response == "d":
+            post_to_course_group(id_list, course_group)
+        elif response == "X" or response == "x":
+            delete_to_course_group(id_list, course_group)
+        elif response == "U" or response == "u":
+            update_to_course_group(id_list, course_group)
+        else:
+            print(f'Failed with status code: {response.status_code}')
+    askaction()
 
 if __name__ == "__main__":
     main()
